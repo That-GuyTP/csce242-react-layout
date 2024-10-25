@@ -1,9 +1,15 @@
 import {Outlet, Link} from "react-router-dom";
+import Header from "./components/Header";
 
 const Layout = () => {
     return (
         <>
-            <p>This is my header</p>
+            <Header />
+
+            
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/pictures">Pictures</Link>
 
             <Outlet />
 
