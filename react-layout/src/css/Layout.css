@@ -1,0 +1,10 @@
+.hide-small {
+    display:none;
+}
+
+@media only screen and (mix-width: 600px) {
+
+    .hide-small {
+        display:flex;
+    }
+}
