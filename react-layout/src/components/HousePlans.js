@@ -11,7 +11,7 @@ const HousePlans = () => {
 
         //Don't give the function a name but execute it immedieatly. A more optimizedly organized async function declaration and call.
         (async() =>{ 
-            const response = await axios.get("https://portiaportia.github.io/json/house-plans.json");
+            const response = await axios.get("http://localhost:3002/api/house_plans");
             setHouses(response.data);
         })(); 
 
@@ -27,6 +27,7 @@ const HousePlans = () => {
                         size={housePlan.size}
                         bedrooms={housePlan.bedrooms}
                         bathrooms={housePlan.bathrooms}
+                        main_img = {housePlan.main_image}
                     />
                 ))}
             </div>
